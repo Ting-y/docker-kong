@@ -14,6 +14,7 @@ preStart() {
 onChange() {
     consul-template \
         -once \
+        -wait 5s:10s \
         -consul consul:8500 \
         -template "/etc/containerpilot/nginx.conf.ctmpl:/etc/nginx/nginx.conf:nginx -s reload"
 }
