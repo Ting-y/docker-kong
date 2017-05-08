@@ -4,11 +4,12 @@
 - [Kong-dashboard](https://github.com/PGBI/kong-dashboard) npm install -g kong-dashboard
 
 
-## Start Kong Server
-- docker-compose -f ./compose/docker-compose.yml
+## Start Kong
+- `docker-compose -f ./compose/docker-compose.yml up -d`
 
 ## Start dashboard to add api
-- npm
+- kong-dashboard start
+
 ## Disclaimer
 
 This is folking from [/Mashape/docker-kong](https://github.com/Mashape/docker-kong)
